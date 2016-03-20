@@ -1,0 +1,10 @@
+robot-plus:
+  container_name: robot-plus 
+  restart: always
+  image: evaou/robot-plus 
+  volumes:
+    - $RWBOT_PATH:/data/Rwbot
+    - $RWBOT_PATH:/usr/share/nginx/html
+  tty: true
+  ports:
+    - "80:80/tcp"
