@@ -8,3 +8,6 @@ robot-plus:
   tty: true
   ports:
     - "80:80/tcp"
+  working_dir: /data/Rwbot
+  environment:
+    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/data/Rwbot/bin
