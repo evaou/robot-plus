@@ -3,11 +3,11 @@ robot-plus:
   restart: always
   image: evaou/robot-plus 
   volumes:
-    - $RWBOT_PATH:/data/Rwbot
-    - $RWBOT_PATH:/usr/share/nginx/html
+    - $ROBOT_PLUS_PATH:/data/robot-plus
+    - $ROBOT_PLUS_PATH:/usr/share/nginx/html
   tty: true
   ports:
     - "80:80/tcp"
-  working_dir: /data/Rwbot
+  working_dir: /data/robot-plus
   environment:
-    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/data/Rwbot/bin
+    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/data/robot-plus/bin
