@@ -11,7 +11,7 @@ RUN yum -y install libxml2-devel
 RUN yum -y install nc
 
 RUN pip install --upgrade pip
-RUN pip install robotframework
+RUN pip install robotframework=2.8.4
 RUN pip install poster
 RUN pip install paramiko
 RUN pip install docopt
@@ -34,3 +34,4 @@ RUN pip install netaddr
 RUN pip install decorator
 RUN pip install pysphere
 RUN pip install zc.lockfile
+RUN pip install validators 
